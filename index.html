@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Forest</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belgrano&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Peralta&family=Voces&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar section-->
+    <nav class="sticky top-0 z-50 bg-green-50 border-b border-green-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex h-14 items-center justify-center gap-60">
+
+                <!-- Website Brand -->
+                <div class="flex items-center gap-2">
+                    <a href="/" class="text-lg font-semibold text-green-800 tracking-light">
+                        Forest
+                    </a>
+                </div>
+
+                <!-- Nav Links -->
+                <div class="hidden md:flex items-center gap-10">
+                    <a href="#" class="text-sm text-green-700 hover:text-green-900 transition">
+                        Home
+                    </a>
+                    <a href="#" class="text-sm text-green-700 hover:text-green-900 transition">
+                        Information
+                    </a>
+                    <a href="#" class="text-sm text-green-700 hover:text-green-900 transition">
+                        Teams
+                    </a>
+                    <a href="#" class="text-sm text-green-700 hover:text-green-900 transition">
+                        FAQ
+                    </a>
+                    <a href="#" class="text-sm text-green-700 hover:text-green-900 transition">
+                        About
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Button -->
+            <button id="menu-btn" class="md:hidden inline-flex items-center justify-center rounded-md p-2
+                    text-green-700 hover:bg-green-100 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-green-100">
+            <div class="px-6 py-4 space-y-4">
+                <a href="#" class="block text-sm text-green-700 hover:text-green-900">
+                    Home
+                </a>
+                <a href="#" class="block text-sm text-green-700 hover:text-green-900">
+                    Information
+                </a>
+                <a href="#" class="block text-sm text-green-700 hover:text-green-900">
+                    Team
+                </a>
+                <a href="#" class="block text-sm text-green-700 hover:text-green-900">
+                    FAQ
+                </a>
+                <a href="#" class="block text-sm text-green-700 hover:text-green-900">
+                    About
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main section -->
+    <main></main>
+
+    <!-- Footer section-->
+    <footer></footer>
+</body>
+
+</html>
