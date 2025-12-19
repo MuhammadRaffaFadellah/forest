@@ -19,35 +19,46 @@
 
 <body>
     <!-- Navbar section-->
-    <nav class="sticky top-0 z-50 bg-green-50 border-b border-green-200">
+    <nav
+        class="sticky top-4 z-50 bg-green-50/80 backdrop-blur-sm border border-green-200 shadow-sm rounded-xl mx-4 md:mx-8 lg:mx-16">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="flex h-14 items-center justify-center gap-60">
+            <div class="flex h-14 items-center justify-center">
 
                 <!-- Website Brand -->
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 mr-auto">
                     <a href="/" class="text-lg font-semibold text-green-800 tracking-light">
                         Forest
                     </a>
                 </div>
 
                 <!-- Nav Links -->
-                <div class="hidden md:flex items-center gap-10">
-                    <a href="#" class="text-sm text-green-700 hover:text-green-900 transition">
+                <div class="hidden md:flex items-center gap-5">
+                    <a href="/" class="nav-link text-sm text-green-700 hover:text-green-900 transition">
                         Home
                     </a>
-                    <a href="#" class="text-sm text-green-700 hover:text-green-900 transition">
+                    <a href="#information" class="nav-link text-sm text-green-700 hover:text-green-900 transition">
                         Information
                     </a>
-                    <a href="#" class="text-sm text-green-700 hover:text-green-900 transition">
+                    <a href="#teams" class="nav-link text-sm text-green-700 hover:text-green-900 transition">
                         Teams
                     </a>
-                    <a href="#" class="text-sm text-green-700 hover:text-green-900 transition">
+                    <a href="#faq" class="nav-link text-sm text-green-700 hover:text-green-900 transition">
                         FAQ
                     </a>
-                    <a href="#" class="text-sm text-green-700 hover:text-green-900 transition">
+                    <a href="#about" class="nav-link text-sm text-green-700 hover:text-green-900 transition">
                         About
                     </a>
                 </div>
+
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="ml-auto inline-flex items-center justify-center rounded-md p-2
+                    text-green-700 hover:bg-green-100 cursor-pointer transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                </button>
             </div>
 
             <!-- Mobile Button -->
@@ -82,11 +93,72 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-[calc(100vh+2.25rem)] flex items-center bg-green-50 overflow-hidden -mt-24">
+
+        <!-- Background Accent -->
+        <div class="absolute inset-0">
+            <div class="absolute -top-32 -right-32 w-96 h-96 bg-green-200/40 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-green-300/30 rounded-full blur-3xl"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <!-- Text -->
+                <div>
+                    <span
+                        class="inline-block mb-4 text-sm font-semibold text-green-700 bg-green-100 px-4 py-1 rounded-full">
+                        Platform Informasi Statistik
+                    </span>
+
+                    <h1 class="text-4xl md:text-5xl font-bold text-green-900 leading-tight mb-6">
+                        Data Statistik <br>
+                        Lebih Mudah & Terpercaya
+                    </h1>
+
+                    <p class="text-green-700 mb-8 max-w-lg">
+                        Menyajikan data statistik secara ringkas, akurat, dan mudah dipahami
+                        untuk mendukung pengambilan keputusan yang lebih baik.
+                    </p>
+
+                    <div class="flex items-center gap-4">
+                        <a href="#information"
+                            class="px-6 py-3 bg-green-900 text-white rounded-xl hover:bg-green-800 transition">
+                            Jelajahi Data
+                        </a>
+                        <a href="#about"
+                            class="px-6 py-3 border border-green-700 text-green-700 rounded-xl hover:bg-green-100 transition">
+                            Tentang Kami
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Illustration / Image -->
+                <div class="hidden md:flex justify-center">
+                    <div class="w-full max-w-md bg-white rounded-3xl shadow-lg p-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="h-28 bg-green-100 rounded-xl"></div>
+                            <div class="h-28 bg-green-200 rounded-xl"></div>
+                            <div class="h-28 bg-green-200 rounded-xl"></div>
+                            <div class="h-28 bg-green-100 rounded-xl"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
     <!-- Main section -->
     <main></main>
 
     <!-- Footer section-->
     <footer></footer>
 </body>
+
+<script src="script.js"></script>
 
 </html>
