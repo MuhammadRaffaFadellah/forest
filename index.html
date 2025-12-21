@@ -15,12 +15,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Belgrano&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Peralta&family=Voces&display=swap"
         rel="stylesheet">
+
+    <link href="./dist/output.css" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- Navbar section-->
-    <nav
-        class="sticky top-4 z-50 bg-green-50/80 backdrop-blur-sm border border-green-200 shadow-sm rounded-xl mx-4 md:mx-8 lg:mx-16">
+    <nav class="sticky top-4 z-50 bg-linear-to-r from-green-50 to-green-80
+        backdrop-blur-sm rounded-xl mx-4 md:mx-8 lg:mx-16 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex h-14 items-center justify-center">
 
@@ -94,7 +97,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative min-h-[calc(100vh+2.25rem)] flex items-center bg-green-50 overflow-hidden -mt-24">
+    <section id="hero"
+        class="relative min-h-[calc(100vh+2.25rem)] flex items-center bg-green-50 overflow-hidden -mt-24">
 
         <!-- Background Accent -->
         <div class="absolute inset-0">
@@ -110,40 +114,38 @@
                 <div>
                     <span
                         class="inline-block mb-4 text-sm font-semibold text-green-700 bg-green-100 px-4 py-1 rounded-full">
-                        Platform Informasi Statistik
+                        Forest Conservation Platform
                     </span>
 
                     <h1 class="text-4xl md:text-5xl font-bold text-green-900 leading-tight mb-6">
-                        Data Statistik <br>
-                        Lebih Mudah & Terpercaya
+                        Protecting Forests <br>
+                        For a Sustainable Future
                     </h1>
 
                     <p class="text-green-700 mb-8 max-w-lg">
-                        Menyajikan data statistik secara ringkas, akurat, dan mudah dipahami
-                        untuk mendukung pengambilan keputusan yang lebih baik.
+                        An information platform that supports forest conservation through monitoring,
+                        education, and accurate environmental data to maintain natural balance
+                        and ecosystem sustainability.
                     </p>
 
                     <div class="flex items-center gap-4">
                         <a href="#information"
-                            class="px-6 py-3 bg-green-900 text-white rounded-xl hover:bg-green-800 transition">
-                            Jelajahi Data
+                            class="px-6 py-3 bg-green-800 text-white rounded-xl hover:bg-green-700 transition-all duration-500">
+                            Explore Information
                         </a>
                         <a href="#about"
-                            class="px-6 py-3 border border-green-700 text-green-700 rounded-xl hover:bg-green-100 transition">
-                            Tentang Kami
+                            class="px-6 py-3 border border-green-600 text-green-600 rounded-xl hover:bg-green-100 transition-all duration-500">
+                            Learn More About Us
                         </a>
                     </div>
                 </div>
 
                 <!-- Illustration / Image -->
                 <div class="hidden md:flex justify-center">
-                    <div class="w-full max-w-md bg-white rounded-3xl shadow-lg p-6">
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="h-28 bg-green-100 rounded-xl"></div>
-                            <div class="h-28 bg-green-200 rounded-xl"></div>
-                            <div class="h-28 bg-green-200 rounded-xl"></div>
-                            <div class="h-28 bg-green-100 rounded-xl"></div>
-                        </div>
+                    <div
+                        class="group w-full max-w-lg rounded-3xl shadow-lg overflow-hidden hover:ring-4 hover:ring-green-200 hover:ring-offset-7 hover:ring-offset-green-50 transition-all duration-500 ease-in-out">
+                        <img src="asset/forest-hero.jpg" alt="Forest Conservation"
+                            class="w-full h-96 object-cover scale-105 blur-sm group-hover:scale-110 hover:blur-none cursor-pointer transition-all duration-500 ease-out" />
                     </div>
                 </div>
 
