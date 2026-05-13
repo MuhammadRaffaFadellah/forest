@@ -2,12 +2,27 @@
   "scripts": {
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
-
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.18"
+    "@tailwindcss/cli": "^4.3.0"
   },
   "dependencies": {
-    "tailwindcss": "^4.1.18"
-  }
+    "tailwindcss": "^4.3.0"
+  },
+  "name": "forest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhammadRaffaFadellah/forest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MuhammadRaffaFadellah/forest/issues"
+  },
+  "homepage": "https://github.com/MuhammadRaffaFadellah/forest#readme"
 }

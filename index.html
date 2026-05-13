@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Forest</title>
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Font style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,51 +13,61 @@
         href="https://fonts.googleapis.com/css2?family=Belgrano&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Peralta&family=Voces&display=swap"
         rel="stylesheet">
 
+    <!-- Tailwind CSS -->
     <link href="./dist/output.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body class="bg-white text-black transition-colors duration-500 dark:bg-zinc-950 dark:text-white">
     <!-- Navbar section-->
-    <nav class="sticky top-4 z-50 bg-linear-to-r from-green-50 to-green-80
+    <nav class="sticky top-4 z-50 bg-linear-to-r from-green-50 to-green-80 dark:from-zinc-900 dark:to-zinc-950 border border-green-100/40 dark:border-white/10
         backdrop-blur-sm rounded-xl mx-4 md:mx-8 lg:mx-16 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex h-14 items-center justify-center">
 
                 <!-- Website Brand -->
                 <div class="flex items-center gap-2 mr-auto">
-                    <a href="/" class="text-lg font-semibold text-green-800 tracking-light">
+                    <a href="/" class="text-lg font-semibold text-green-800 dark:text-green-300 tracking-light">
                         Forest
                     </a>
                 </div>
 
                 <!-- Nav Links -->
                 <div class="hidden md:flex items-center gap-5">
-                    <a href="/" class="nav-link text-sm text-green-700 hover:text-green-900 transition">
+                    <a href="#hero"
+                        class="nav-link text-sm text-green-700 dark:text-green-300 hover:text-green-900 dark:hover:text-white transition">
                         Home
                     </a>
-                    <a href="#information" class="nav-link text-sm text-green-700 hover:text-green-900 transition">
+                    <a href="#information"
+                        class="nav-link text-sm text-green-700 dark:text-green-300 hover:text-green-900 dark:hover:text-white transition">
                         Information
                     </a>
-                    <a href="#teams" class="nav-link text-sm text-green-700 hover:text-green-900 transition">
+                    <a href="#teams"
+                        class="nav-link text-sm text-green-700 dark:text-green-300 hover:text-green-900 dark:hover:text-white transition">
                         Teams
                     </a>
-                    <a href="#faq" class="nav-link text-sm text-green-700 hover:text-green-900 transition">
+                    <a href="#faq"
+                        class="nav-link text-sm text-green-700 dark:text-green-300 hover:text-green-900 dark:hover:text-white transition">
                         FAQ
                     </a>
-                    <a href="#about" class="nav-link text-sm text-green-700 hover:text-green-900 transition">
+                    <a href="#about"
+                        class="nav-link text-sm text-green-700 dark:text-green-300 hover:text-green-900 dark:hover:text-white transition">
                         About
                     </a>
                 </div>
 
                 <!-- Theme Toggle Button -->
-                <button id="theme-toggle" class="ml-auto inline-flex items-center justify-center rounded-md p-2
-                    text-green-700 hover:bg-green-100 cursor-pointer transition">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                    </svg>
+                <button id="theme-toggle"
+                    class="ml-auto inline-flex items-center justify-center rounded-md p-2
+                text-green-700 dark:text-green-300 hover:bg-green-100 dark:hover:bg-white/10 cursor-pointer transition">
+                    <span id="theme-icon">
+                        <!-- Sun Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </span>
                 </button>
             </div>
 
@@ -75,7 +82,8 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-green-100">
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white dark:bg-zinc-900 border-t border-green-100 dark:border-white/10">
             <div class="px-6 py-4 space-y-4">
                 <a href="#" class="block text-sm text-green-700 hover:text-green-900">
                     Home
@@ -97,8 +105,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero"
-        class="relative min-h-[calc(100vh+2.25rem)] flex items-center bg-green-50 overflow-hidden -mt-24">
+    <section id="hero" class="relative min-h-[calc(100vh+2.50rem)] flex items-center 
+        bg-green-50 dark:bg-zinc-950 overflow-hidden -mt-24 transition-colors duration-500">
 
         <!-- Background Accent -->
         <div class="absolute inset-0">
@@ -112,17 +120,17 @@
 
                 <!-- Text -->
                 <div>
-                    <span
-                        class="inline-block mb-4 text-sm font-semibold text-green-700 bg-green-100 px-4 py-1 rounded-full">
+                    <span class="inline-block mb-4 text-sm font-semibold text-green-700 dark:text-green-300 
+                        bg-green-100 dark:bg-green-900/30 px-4 py-1 rounded-full">
                         Forest Conservation Platform
                     </span>
 
-                    <h1 class="text-4xl md:text-5xl font-bold text-green-900 leading-tight mb-6">
+                    <h1 class="text-4xl md:text-5xl font-bold text-green-900 dark:text-white leading-tight mb-6">
                         Protecting Forests <br>
                         For a Sustainable Future
                     </h1>
 
-                    <p class="text-green-700 mb-8 max-w-lg">
+                    <p class="text-green-700 dark:text-zinc-300 mb-8 max-w-lg">
                         An information platform that supports forest conservation through monitoring,
                         education, and accurate environmental data to maintain natural balance
                         and ecosystem sustainability.
@@ -131,10 +139,11 @@
                     <div class="flex items-center gap-4">
                         <a href="#information"
                             class="px-6 py-3 bg-green-800 text-white rounded-xl hover:bg-green-700 hover:ring-3 hover:ring-green-200 hover:ring-offset-2 hover:ring-offset-green-500 transition-all duration-500 ease-in-out">
-                            Explore Information
+                            Explore
                         </a>
-                        <a href="#about"
-                            class="px-6 py-3 border border-green-600 text-green-600 rounded-xl hover:bg-green-100 hover:ring-3 hover:ring-green-200 hover:ring-offset-2 hover:ring-offset-green-50 transition-all duration-500 ease-in-out">
+                        <a href="#about" class="px-6 py-3 border border-green-600 dark:border-green-400 text-green-600 dark:text-green-300 
+                            hover:bg-green-100 dark:hover:bg-white/10 hover:ring-3 hover:ring-green-200 hover:ring-offset-2 hover:ring-offset-green-50 
+                            rounded-xl transition-all duration-500 ease-in-out">
                             Learn More About Us
                         </a>
                     </div>
@@ -142,8 +151,7 @@
 
                 <!-- Illustration / Image -->
                 <div class="hidden md:flex justify-center">
-                    <div
-                        class="group w-full max-w-lg rounded-3xl shadow-lg overflow-hidden">
+                    <div class="group w-full max-w-lg rounded-3xl shadow-lg overflow-hidden">
                         <img src="asset/forest-hero.jpg" alt="Forest Conservation"
                             class="w-full h-96 object-cover scale-105 group-hover:scale-100 cursor-pointer transition-all duration-500 ease-out" />
                     </div>
@@ -153,14 +161,22 @@
         </div>
     </section>
 
-
     <!-- Main section -->
-    <main></main>
+    <main id="main" class="overflow-hidden">
+
+        <!-- Statistics Section -->
+        <section id="information" class="relative py-28">
+            <!-- Background -->
+            <div class="img"></div>
+        </section>
+    </main>
 
     <!-- Footer section-->
-    <footer></footer>
+    <footer id="footer">
+
+    </footer>
+    <script src="script.js"></script>
 </body>
 
-<script src="script.js"></script>
 
 </html>
