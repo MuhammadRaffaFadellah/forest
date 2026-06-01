@@ -18,10 +18,10 @@
 
 </head>
 
-<body class="bg-[#F0FDF4] text-black transition-colors duration-300 dark:bg-zinc-950 dark:text-white">
+<body class="bg-[#F0FDF4] text-black transition-colors duration-500 dark:bg-zinc-950 dark:text-white overflow-x-hidden">
     <!-- Navbar section-->
     <nav class="sticky top-4 z-50 bg-linear-to-r from-green-50 to-green-80 dark:from-zinc-900 dark:to-zinc-950 border border-green-100/40 border-r-0 dark:border-white/10
-        backdrop-blur-sm rounded-xl mx-4 md:mx-8 lg:mx-16 transition-all duration-800">
+        backdrop-blur-sm rounded-xl mx-4 md:mx-8 lg:mx-16 transition-all">
         <div class="max-w-7xl mx-auto px-6 flex items-center h-16">
             <div class="flex items-center w-full">
 
@@ -34,7 +34,7 @@
 
                 <!-- Nav Links -->
                 <div class="hidden md:flex items-center gap-5">
-                    <a href="#hero"
+                    <a href="#home"
                         class="nav-link text-sm text-green-700 dark:text-green-300 hover:text-green-900 dark:hover:text-white transition">
                         Home
                     </a>
@@ -106,8 +106,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative min-h-[calc(100vh+2.50rem)] flex items-center 
-        overflow-hidden -mt-24 transition-colors duration-500">
+    <section id="home" class="relative min-h-[calc(100vh+2.50rem)] flex items-center 
+        -mt-24 transition-colors duration-500">
 
         <!-- Background Accent -->
         <div class="absolute inset-0">
@@ -163,16 +163,67 @@
     </section>
 
     <!-- Main section -->
-    <main id="main" class="overflow-hidden ">
+    <main class="relative w-full transition-colors duration-500">
 
         <!-- Statistics Section -->
-        <section id="information"
-            class="relative w-full pt-26  pb-40 dark:text-gray-200 flex justify-center items-center">
-            <div class="card w-full h-64 mx-30 bg-red-500 justify-center items-center">
-                <div class="card-header">
+        <section id="information" class="relative w-full py-28 transition-colors duration-500">
+            <div class="max-w-7xl mx-auto px-6">
+                <!-- Heading -->
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-green-900 dark:text-white mb-6">
+                        Why Forest Conservation Matters?
+                    </h2>
 
+                    <p class="max-w-3xl mx-auto text-green-700 dark:text-gray-300 leading-relaxed">
+                        Forests are one of the most valuable ecosystems on Earth.
+                        They provide clean air, protect wildlife, regulate water cycles,
+                        and help combat climate change for future generations.
+                    </p>
                 </div>
-            </div>
+
+                <!-- Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+
+                    <!-- Card 1 -->
+                    <div
+                        class="card-1 p-10 border border-green-200 dark:border-green-700 rounded-3xl bg-white dark:bg-white/5 backdrop-blur-sm hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                        <h2 class="text-2xl font-bold mb-5">Clean Air</h2>
+                        <p class="text-green-700 dark:text-gray-300 leading-relaxed">
+                            Forests absorb carbon dioxide and release oxygen, helping
+                            maintain healthy air quality and supporting life across the planet.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="card-2 p-10 border border-green-200 dark:border-green-700 rounded-3xl bg-white dark:bg-white/5 backdrop-blur-sm hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                        <h2 class="text-2xl font-bold mb-5">Biodiversity</h2>
+                        <p class="text-green-700 dark:text-gray-300 leading-relaxed">
+                            Forest ecosystems are home to countless species of plants,
+                            animals, and microorganisms that support global biodiversity.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="card-3 p-10 border border-green-200 dark:border-green-700 rounded-3xl bg-white dark:bg-white/5 backdrop-blur-sm hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                        <h2 class="text-2xl font-bold mb-5">Water Cycle</h2>
+                        <p class="text-green-700 dark:text-gray-300 leading-relaxed">
+                            Forests play a crucial role in regulating the water cycle,
+                            ensuring a balanced distribution of water resources and
+                            preventing erosion and flooding.
+                        </p>
+                    </div>
+
+                    <!-- Card 4-->
+                    <div
+                        class="card-4 p-10 border border-green-200 dark:border-green-700 rounded-3xl bg-white dark:bg-white/5 backdrop-blur-sm hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+                        <h2 class="text-2xl font-bold mb-5">Climate Protection</h2>
+                        <p class="text-green-700 dark:text-gray-300 leading-relaxed">
+                            Forests act as natural carbon sinks, helping slow climate
+                            change and stabilize global temperatures.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
