@@ -1,1 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Peralta&family=Voces&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+/* Custom CSS for the website
+Font family:
+Lora
+Cormorant Garamond
+Libre Baskerville
+Merriweather
+Manrope
+Plus Jakarta Sans
+*/
+nav {
+    font-family: 'Lora', serif;
+}
+
+
+
+#hero {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+main {
+    font-family: 'Manrope', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}

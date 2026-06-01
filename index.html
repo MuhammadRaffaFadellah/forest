@@ -9,9 +9,12 @@
     <!-- Font style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Belgrano&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Peralta&family=Voces&display=swap"
-        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css">
 
     <!-- Tailwind CSS -->
     <link href="./dist/output.css" rel="stylesheet">
@@ -34,7 +37,7 @@
 
                 <!-- Nav Links -->
                 <div class="hidden md:flex items-center gap-5">
-                    <a href="#home"
+                    <a href="#hero"
                         class="nav-link text-sm text-green-700 dark:text-green-300 hover:text-green-900 dark:hover:text-white transition">
                         Home
                     </a>
@@ -86,7 +89,7 @@
         <div id="mobile-menu"
             class="hidden md:hidden bg-white dark:bg-zinc-900 border-t border-green-100 dark:border-white/10">
             <div class="px-6 py-4 space-y-4">
-                <a href="#home" class="block text-sm text-green-700 hover:text-green-900">
+                <a href="#hero" class="block text-sm text-green-700 hover:text-green-900">
                     Home
                 </a>
                 <a href="#information" class="block text-sm text-green-700 hover:text-green-900">
@@ -106,7 +109,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="relative min-h-[calc(100vh+2.50rem)] flex items-center 
+    <section id="hero" class="relative min-h-[calc(100vh+2.50rem)] flex items-center 
         -mt-24 transition-colors duration-500">
 
         <!-- Background Accent -->
